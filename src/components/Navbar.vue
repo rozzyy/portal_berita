@@ -4,7 +4,8 @@
        <nav id="nav" class="navbar navbar-expand-lg nav-transparent fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img :src="logo" alt="Logo" width="150">
+                    <!-- <img :src="logo" alt="Logo" width="150"> -->
+                    NAVBAR
                 </a>
                 <span id="nav_btn" :class="{ active: isActive }" @click="menuEx"><span></span></span>
 

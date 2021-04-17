@@ -9,7 +9,7 @@
             <ul class="nav justify-content-center">
                 <li class="nav-item px-3 text-white text-center">
                    <div><img :src="printIcon" alt="print" class="icon-size icon-border p-2"></div>
-                   <div class="custom-size">LAPOR SI UMAR</div>
+                   <div class="custom-size">E-DATA</div>
                 </li>
                 <li class="nav-item px-3 text-white text-center">
                    <div><img :src="printIcon" alt="print" class="icon-size icon-border p-2"></div>
@@ -59,7 +59,7 @@ export default {
     opacity : 0.2;
     z-index: -1;
 } */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) and (max-width: 750px) {
     .image-mobile {
         width: 100%;
         height: 640px;
@@ -73,7 +73,7 @@ export default {
 
 .hero-text {
     position: absolute;
-    margin: 10% 10% 10% 27%;
+    margin: 10% 10% 10% 29%;
     color: white;
 }
 
@@ -81,7 +81,7 @@ export default {
     width: 70px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) and (max-width: 750px) {
     .font-mobile-1 {
         font-size: 25px;
     }
@@ -109,12 +109,12 @@ export default {
     height: 19%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) and (max-width: 750px) {
     .apps-box {
         position: absolute;
         margin-top: 125%;
         background-color: #5855559d;
-        height: 22%;
+        height: 19%;
     }
 }
 
