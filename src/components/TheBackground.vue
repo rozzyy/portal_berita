@@ -73,7 +73,7 @@ export default {
 
 .hero-text {
     position: absolute;
-    margin: 10% 10% 10% 29%;
+    margin: 10% 10% 10% 27%;
     color: white;
 }
 
@@ -115,6 +115,14 @@ export default {
         margin-top: 125%;
         background-color: #5855559d;
         height: 19%;
+    }
+}
+
+@media only screen and (min-width: 1900px) {
+    .hero-text {
+        position: absolute;
+        margin: 10% 10% 10% 34%;
+        color: white;
     }
 }
 
