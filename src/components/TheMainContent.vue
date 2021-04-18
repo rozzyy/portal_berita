@@ -321,120 +321,43 @@
         <div class="">
             <div class="selogan text-white">
                 <div class="content-selogan">
-                    <h1>Bangga Menjadi Warga Kota Tebing Tinggi</h1>
+                    <h1 class="mobile-size">Bangga Menjadi Warga Kota Tebing Tinggi</h1>
                     <p class="py-2 text-justify">
                         Menjadikan Kota Tebing Tinggi Sebagai Kota Jasa dan Perdagangan yang Cerdas, Layak, Mandiri dan Sejahtera dengan Sumber Daya Manusia yang Beriman dan Berkualitas
                     </p>
                     <b-row class="text-center py-4">
-                        <b-col>
+                        <b-col sm="4" class="py-2">
                             <b-button variant="primary" class="container" pill>Struktur Organisasi</b-button>
                         </b-col>
-                        <b-col>
+                        <b-col sm="4" class="py-2">
                             <b-button variant="danger" class="container" pill>Tujuan Sasaran</b-button>
                         </b-col>
-                        <b-col>
+                        <b-col sm="4" class="py-2">
                             <b-button variant="success" class="container" pill>Tujuan dan Fungsi</b-button>
                         </b-col>
                     </b-row>
                 </div>
             </div>
-           <img :src="image" alt="foto" width="100%" class="info-img">
+           <img :src="image" alt="foto" width="100%" class="info-img2">
         </div>
         <div class="py-5 text-center">
             <h2>Link Terkait Bappeda Kota Tebing Tinggi</h2>
             <div class="container py-4">
                 <b-row>
-                    <b-col>
+                    <b-col sm="3">
                         <img :src="square" alt="square" width="50%">
-                    </b-col>
-                    <b-col>
-                        <img :src="square" alt="square" width="50%">
-                    </b-col>
-                    <b-col>
-                        <img :src="square" alt="square" width="50%">
-                    </b-col>
-                    <b-col>
-                        <img :src="square" alt="square" width="50%">
-                    </b-col>
-                </b-row>
-            </div>
-        </div>
-        <!-- Footer -->
-        <footer class="custom-bg">
-            <div class="container py-5">
-                <b-row class="text-white">
-                    <b-col sm="4">
-                        <img :src="logo" alt="logo" width="70%">
-                        <div class="pt-2">
-                            <b-icon icon="building"></b-icon> Jalan Delima No. 05 Tebing Tinggi Sumatera Utara
-                        </div>
-                        <div>
-                            <b-icon icon="telephone"></b-icon> (0621) 21592
-                        </div>
-                        <div>
-                            <b-icon icon="envelope"></b-icon> sekretariatbapp.d5@gmail.com
-                        </div>
-                        <div class="pb-3">
-                            <b-icon icon="globe"></b-icon> bappeda.tebingtinggikota.go.id
-                        </div>
-                        <img :src="maps" alt="maps" width="60%">
-                    </b-col>
-                    <b-col sm="5">
-                        <h5 class="font-weight-bold">KONTAK KAMI</h5>
-                        <small class="text-justify">
-                            Silahkan Kirim Tanggapan Anda Mengenai Website Ini Atau Sistem Kami Saat Ini. Tanggapan Anda Sangat Membantu Untuk Meningkatkan Pelayanan Kami Kepada Masyarakat.Apabila terdapat kendala dalam menemukan informasi yang dicari dapat mengunjungi halaman FAQ
-                        </small>
-                        <form class="py-2">
-                            <b-row>
-                                <b-col>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nama">
-                                    </div>
-                                </b-col>
-                                <b-col>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
-                                    </div>
-                                </b-col>
-                            </b-row>
-                            <div class="form-group">
-                                <textarea class="form-control rounded-0" id="styled" rows="3" placeholder="Pesan"></textarea>
-                            </div>
-                            <b-button variant="danger" size="md"><b-icon icon="cursor"></b-icon> Kirim</b-button>
-                        </form>
                     </b-col>
                     <b-col sm="3">
-                        <div class="py-2">
-                            <h5 class="font-weight-bold">INFORMASI</h5>
-                            <div class="py-2">
-                                <a href="#" class="link-info">Berita</a>
-                            </div>
-                            <div class="py-2">
-                                <a href="#" class="link-info">Pengumuman</a>
-                            </div>
-                            <div class="py-2">
-                                <a href="#" class="link-info">Download</a>
-                            </div>
-                            <div class="py-2">
-                                <a href="#" class="link-info">Galeri</a>
-                            </div>
-                        </div>
-                        <div class="py-2">
-                            <h5 class="font-weight-bold">TOTAL PENGUNJUNG</h5>
-                            <div class="visitor">
-                                12345
-                            </div>
-                            <div class="py-2">
-                                <a href="#" class="visitor-link">Lihat Selengkapnya</a>
-                            </div>
-                        </div>
+                        <img :src="square" alt="square" width="50%">
+                    </b-col>
+                    <b-col sm="3">
+                        <img :src="square" alt="square" width="50%">
+                    </b-col>
+                    <b-col sm="3">
+                        <img :src="square" alt="square" width="50%">
                     </b-col>
                 </b-row>
             </div>
-        </footer>
-        <div class="foot-back text-center py-2">
-            <div>COPYRIGHT 2020 BAPPEDA KOTA TEBING TINGGI. ALL RIGHT RESERVED.</div>
-
         </div>
     </div>
 </template>
@@ -444,8 +367,6 @@ import Image from '@/assets/images/background.jpg'
 import Image2 from '@/assets/images/background.jpg'
 import info from '@/assets/images/info.jpg'
 import square from '@/assets/icons/square.png'
-import bappeda from '@/assets/logob.png'
-import maps from '@/assets/images/maps.png'
 
 export default {
     data () {
@@ -454,8 +375,6 @@ export default {
             image2: Image2,
             info: info,
             square: square,
-            logo: bappeda,
-            maps: maps,
         }
     },
 }
@@ -507,6 +426,15 @@ export default {
     height: 500px;
     object-fit: cover;
     width: 100%;
+}
+
+.info-img2{
+    height: 500px;
+    object-fit: cover;
+    width: 100%;
+    filter: blur(2px);
+    --webkit-filter: blur(2px);
+    z-index: -1;
 }
 .box-info {
     position: absolute;
@@ -662,6 +590,7 @@ export default {
     background-color: #00000090;
     width: 100%;
     height: 69%;
+    z-index: 2;
 }
 
 .content-selogan {
@@ -670,57 +599,31 @@ export default {
     margin-left: 10%;
 }
 
-.foot-back {
-    background-color: #2e2c2c ;
-    font-size: 1.5vh;
-    color: #6e7070;
-}
+@media only screen and (max-width: 600px) {
+    .selogan {
+        position: absolute;
+        background-color: #00000090;
+        width: 100%;
+        height: 78%;
+        margin-top: 195.5%;
+    }
 
-input[type=text] {
-    background-color: #00000057 ;
-    border: none;
-}
+    .content-selogan {
+        width: 70%;
+        margin-top: 10%;
+        margin-left: 10%;
+        font-size: 12px;
+    }
 
-input[type=text]:focus {
-    background-color: #00000057 ;
-    border: none;
-    color: white;
-}
+    .mobile-size {
+        font-size: 30px;
+    }
 
-textarea#styled {
-    background-color: #00000057;
-    border: none;
-    color: white;
-}
-
-.custom-bg {
-    background-color: #191a1a;
-}
-
-.link-info {
-    color: white;
-    font-size: 16px;
-    transition: font-size 0.5s;
-}
-
-.link-info:hover {
-    text-decoration: none;
-    color: #cecfcfef;
-    font-size: 20px;
-}
-
-.visitor {
-    background-image: linear-gradient(0deg, black, rgb(53, 52, 52)) ;
-    text-align: center;
-    width: 50%;
-    border-radius: 5px;
-    padding: 4px 4px 4px 4px;
-}
-.visitor-link {
-    color: white;
-}
-.visitor-link:hover {
-    text-decoration: none;
-    color: #cecfcfef;
+    .info-img2{
+        height: 500px;
+        object-fit: cover;
+        width: 100%;
+        margin-top: 195.5%;
+    }
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- Navbar -->
-       <nav id="nav" class="navbar navbar-expand-lg nav-transparent fixed-top">
+       <nav id="nav" class="navbar navbar-expand-lg nav-transparent fixed-top" style="z-index: 2">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img :src="logo" alt="Logo" width="150">
@@ -10,20 +10,44 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active px-2">
-                            <a class="nav-link underline" href="#">BERANDA<span class="sr-only">(current)</span></a>
+                        <li class="nav-item px-2">
+                            <router-link class="nav-link text-link underline font-weight-bold" to="/">BERANDA</router-link>
                         </li>
                         <li class="nav-item px-2">
-                            <a class="nav-link text-link underline" href="#">INFORMASI <span class="sr-only">(current)</span></a>
+                            <div @mouseover="onOver('first')" @mouseleave="onLeave('first')" >
+                                <a class="nav-link text-link underline font-weight-bold" href="#">INFORMASI</a>
+                                <transition name="slide-fade">
+                                    <div v-if="muncul" class="dropdown-box">
+                                        <div class="container pt-3 pb-2 box-link">
+                                            <router-link to="/berita" class="drop-link h6 font-weight-bold">Berita</router-link>
+                                        </div>
+                                        <div class="container pb-3 pt-3">
+                                            <router-link to="/pengumuman" class="drop-link h6 font-weight-bold">Pengumuman</router-link>
+                                        </div>
+                                    </div>
+                                </transition>
+                            </div>
                         </li>
                         <li class="nav-item px-2">
-                            <a class="nav-link text-link underline" href="#">MEDIA <span class="sr-only">(current)</span></a>
+                            <div @mouseover="onOver('second')" @mouseleave="onLeave('second')" >
+                                    <a class="nav-link text-link underline font-weight-bold" href="#">MEDIA</a>
+                                    <transition name="slide-fade">
+                                        <div v-if="muncul2" class="dropdown-box">
+                                            <div class="container pt-3 pb-2 box-link">
+                                                <router-link to="/galeri" class="drop-link h6 font-weight-bold">Galeri</router-link>
+                                            </div>
+                                            <div class="container pb-3 pt-3">
+                                                <router-link to="/download" class="drop-link h6 font-weight-bold">Download</router-link>
+                                            </div>
+                                        </div>
+                                    </transition>
+                            </div>
                         </li>
                         <li class="nav-item px-2">
-                            <a class="nav-link text-link underline" href="#">PROFIL <span class="sr-only">(current)</span></a>
+                            <router-link class="nav-link text-link underline font-weight-bold" to="/profil">PROFIL <span class="sr-only">(current)</span></router-link>
                         </li>
                         <li class="nav-item px-2">
-                            <a class="nav-link text-link underline" href="#">KONTAK <span class="sr-only">(current)</span></a>
+                            <router-link class="nav-link text-link underline font-weight-bold" to="/kontak">KONTAK</router-link>
                         </li>
                     </ul>
                 </div>
@@ -55,7 +79,9 @@ export default {
         return {
             isActive: false,
             navbarShow: false,
-            logo: bappeda
+            logo: bappeda,
+            muncul: false,
+            muncul2: false
         }
     },
     methods: {
@@ -66,6 +92,20 @@ export default {
             } else {
                 this.isActive = false
                 this.navbarShow = false
+            }
+        },
+        onOver (id) {
+            if (id == 'first') {
+                this.muncul = true
+            } else {
+                this.muncul2 = true
+            }
+        },  
+        onLeave (id) {
+            if (id == 'first') {
+                this.muncul = false
+            } else {
+                this.muncul2 = false
             }
         }
     } 
@@ -91,7 +131,9 @@ export default {
 
 .underline:hover:after {
     width: 100%;
+    display: block;
 }
+
 .navbar-nav>li.active>.underline:after {
     width: 100%;
 }
@@ -154,7 +196,28 @@ export default {
 }
 .slide-fade-enter, .slide-fade-leave-to
 /* .slide-fade-leave-active below version 2.1.8 */ {
-  transform: translateX(10px);
+  transform: translateY(20px);
   opacity: 0.5;
+}
+
+.dropdown-box {
+    position: absolute;
+    background-color: #272626d0;
+    width: 15%;
+    height: 165%;
+    color: white;
+    border-radius: 5px;
+}
+
+.drop-link {
+    color: white;
+}
+.drop-link:hover {
+    color: #c7c4c4b0;
+    text-decoration: none;
+    margin-left: 3%;
+}
+.box-link {
+    border-bottom: 0.1px dashed rgba(255, 255, 255, 0.233);
 }
 </style>
