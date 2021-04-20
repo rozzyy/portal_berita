@@ -1,11 +1,11 @@
 <template>
     <div>
         <!-- Navbar -->
-       <nav id="nav" class="navbar navbar-expand-lg nav-transparent fixed-top" style="z-index: 2">
+       <nav id="nav" class="navbar navbar-expand-lg nav-transparent fixed-top" style="z-index: 3">
             <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img :src="logo" alt="Logo" width="150">
-                </a>
+                <router-link class="navbar-brand" to="/">
+                    <img :src="logo" alt="Logo" width="180">
+                </router-link>
                 <span id="nav_btn" :class="{ active: isActive }" @click="menuEx"><span></span></span>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">

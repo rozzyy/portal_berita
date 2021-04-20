@@ -589,7 +589,7 @@ export default {
     position: absolute;
     background-color: #00000090;
     width: 100%;
-    height: 69%;
+    height: 61%;
     z-index: 2;
 }
 

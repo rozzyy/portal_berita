@@ -31,7 +31,9 @@
             </div>
             <div v-else-if="showStruktur">
                 <transition name="slide-fade">
-                    <h1>Struktur Organisasi</h1>
+                    <div class="container shadow">
+                        <img :src="struktur" alt="struktur" width="100%">
+                    </div>
                 </transition>
             </div>
             <div v-else>
@@ -44,6 +46,8 @@
 </template>
 
 <script>
+import struktur from '@/assets/images/struktur.png'
+
 export default {
     data () {
         return {
@@ -52,7 +56,8 @@ export default {
             showTusi: false,
             isActive3: false,
             isActive2: false,
-            isActive: true
+            isActive: true,
+            struktur: struktur
         }
     },
     methods: {
@@ -93,7 +98,7 @@ export default {
 }
 .slide-fade-enter, .slide-fade-leave-to
 /* .slide-fade-leave-active below version 2.1.8 */ {
-  transform: translateY(20px);
+  transform: translateX(20px);
   opacity: 0.6;
 }
 
