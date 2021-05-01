@@ -491,7 +491,7 @@ export default {
 }
 
 .card:hover .font-pos {
-    margin-top: 25%;
+    margin-top: 10%;
 }
 
 .card:hover .custom-title {

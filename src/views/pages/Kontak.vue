@@ -74,24 +74,25 @@
 
 <style scoped>
 input[type=text] {
-    background-color: #0000002d ;
+    background-color: #a3a3a32d ;
     border: none;
+    border-radius: 9px;
 }
 
 input[type=text]:focus {
-    background-color: #00000057 ;
+    background-color: #c0b5b557 ;
     border: none;
-    color: white;
+    color: rgb(36, 35, 35);
 }
 
 textarea#styled {
-    background-color: #00000031;
+    background-color: #aaa8a831;
     border: none;
-    color: white;
+    color: rgb(36, 35, 35);
 }
 
 .font-jadwal {
-    font-size: 2vh;
+    font-size: 1.7vh;
     font-weight: bold;
 }
 

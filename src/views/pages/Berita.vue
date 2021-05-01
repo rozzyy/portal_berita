@@ -319,7 +319,7 @@ export default {
             info: info,
             square: square,
         }
-    },
+    }
 }
 </script>
 
@@ -434,7 +434,7 @@ export default {
 }
 
 .card:hover .font-pos {
-    margin-top: 25%;
+    margin-top: 20%;
 }
 
 .card:hover .custom-title {
